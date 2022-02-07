@@ -16,7 +16,7 @@ static volatile unsigned int TimeDelay = 0;
 /*				Public Function					*/
 /**********************************/
 
-void SysTick_Init(unsigned int ticks)
+void SysTick_Init(unsigned int ticks)	//Least urgency (Not urgency Compared with Other IRQn)
 {
 	SysTick->CTRL = 0;																						//Disable SysTick
 	
